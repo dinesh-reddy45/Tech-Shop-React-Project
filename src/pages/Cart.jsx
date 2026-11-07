@@ -9,6 +9,8 @@ function Cart() {
 
   const cartItems = useSelector((state) => state.cart.items);
 
+  window.scrollTo({ top: 0 });
+
   const handleCheckout = () => {
     const loggedInUser = JSON.parse(
       localStorage.getItem("loggedInUser")
